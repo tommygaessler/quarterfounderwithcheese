@@ -21,10 +21,10 @@ green: #ADF7B6
 
 .background {
   height: 100vh;
-  background-position: center center;
+  background-position: 40% 80%;
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-image: url('images/cheese-white.svg');
+  background-size: 60%;
+  background-image: url('images/cheese-and-money.svg');
   background-color: #FFC09F;
 }
 
@@ -32,6 +32,14 @@ green: #ADF7B6
   padding-top: 70px;
   color: white;
   text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 50px;
+}
+
+.intro-text p {
+  font-size: 30px;
 }
 
 .about, .mindset, .partners, .team {
@@ -62,13 +70,11 @@ green: #ADF7B6
   color: white;
 }
 
-/*.team img {
+.team img {
   border-radius: 50%;
-  height: auto;
-}*/
+}
 
 img {
-  height: 100vh;
   width: 100%;
 }
 
@@ -79,7 +85,9 @@ img {
 
   img {
     height: calc(100vh / 3);
-    width: 100%;
+    width: auto;
+    display: block;
+    margin: auto;
   }
 
   footer, footer .text-right {
