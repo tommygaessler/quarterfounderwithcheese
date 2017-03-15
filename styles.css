@@ -1,31 +1,94 @@
+
+/*
+
+blue: #79ADDC
+
+peach: #FFC09F
+
+yellow: #FFEE93
+
+lemon: #FCF5C7
+
+green: #ADF7B6
+
+*/
+
+/* ---------- Header ---------- */
+
+
+
+/* ---------- Main ---------- */
+
 .background {
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('https://images.unsplash.com/photo-1477534980688-3ac008b36996?dpr=2&auto=format&fit=crop&w=767&h=511&q=80&cs=tinysrgb');
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-size: 50%;
+  background-image: url('images/cheese-white.svg');
+  background-color: #FFC09F;
 }
 
 .intro-text {
+  padding-top: 70px;
   color: white;
   text-align: center;
 }
 
+.about, .mindset, .partners, .team {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  background-color: #FFEE93;
+}
+
+.mindset {
+  background-color: #ADF7B6;
+}
+
+.about .row, .mindset .row {
+  display: flex;
+  align-items: center;
+}
+
+.partners {
+
+}
+
+.team {
+  background-color: #79ADDC;
+  color: white;
+}
+
+/*.team img {
+  border-radius: 50%;
+  height: auto;
+}*/
+
 img {
+  height: 100vh;
   width: 100%;
 }
 
-.row {
-  margin-top: 150px;
-  margin-bottom: 150px;
+@media (max-width: 767px) {
+  .row {
+    display: block !important;
+  }
+
+  img {
+    height: calc(100vh / 3);
+    width: 100%;
+  }
+
+  footer, footer .text-right {
+    text-align: center;
+  }
 }
 
-.row h2 {
-  margin-bottom: 50px;
-}
+
+/* ---------- Footer ---------- */
 
 footer {
   background-color: #f3f4f5;
